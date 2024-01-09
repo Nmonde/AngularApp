@@ -1,0 +1,22 @@
+div {
+    margin: 20px;
+}
+
+h1 {
+    color: 333;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,9 @@
+<div *ngFor="let category of products | keyvalue">
+    <h2>{{ category.key }}</h2>
+    <div *ngFor="let product of category.value">
+        <h3>{{ product.name }}</h3>
+        <p>Price: ${{ product.price }}</p>
+        <p>Click <a routerLink="/cart">here</a> to view your shopping cart.</p>
+        <button (click)="addToCart(category.key, product.name)">Add to Cart</button>
+    </div>
+</div>
